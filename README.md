@@ -1,10 +1,2 @@
-# NLP_spoiler
-Final project for NLP class. Movie-books spoiler.
-
-The purpose of this study is to analyze the phenomenon of spoiler-containing reviews in the entertainment industry. With the increasingly growing importance of online communities as source of information, it becomes essential to develop tools that make the user experience as spoiler-free as possible. 
-After an initial data exploratory analysis that provides useful insights on the general trends of this phenomenon, we develop a text classifier with the purpose of identifying those reviews that contain spoiler content. Furthermore, through the use of a generative model, we rephrase such reviews into a new spoiler-free version.
-The data we analyze is taken from a Kaggle dataset containing movie reviews scraped from IMDB.com. It contains information on 1570 movies such as their plot summary and synopsis, as well as a total of 573.906 reviews with their text content, ratings and spoiler flags (74% No vs 26% Yes).
-
-To evaluate our classifier we will use the F1-score, with a strong focus on recall to prevent spoilers from being left on the pool of reviews. The performance of our model will then be compared to that of a  Logistic Regression with TF-IDF embeddings, serving as a baseline. As a final step, the generated paraphrasis will be evaluated against the original reviews using semantic similarity measures (i.e. STSBenchmark, etc.).
-s
-
+# NLP_spoiler - Abstract
+Spoilers in reviews can damage the enjoy- ment of entertainment products. Therefore, review platforms focus on detecting and flag- ging them. Unfortunately, this practice censors potentially valuable reviews. Large language models (LLMs) may represent a powerful tool to overcome this problem. We implement mul- tiple classifiers, we utilize LLMs to generate paraphrased, spoiler-free reviews and we pro- pose a novel evaluation score, the S5, to as- sess their performance. After testing various models, the DistilBERT classifier emerges as the most effective, achieving a 68% macro F1 score. This performs well compared to state- of-the-art models and surpasses our established baseline. Moreover, the S5 effectively eval- uates the LLMs paraphrases, considering the spoiler removal. This organic approach can improve user interaction with platforms by au- tomatically detecting spoilers and modifying re- views, preventing the reader from being harmed and the writer from feeling censored.
